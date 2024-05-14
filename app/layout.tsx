@@ -6,10 +6,10 @@ import MainAppLayout from "@/components/global/template/layouts/MainAppLayout/Ma
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title:{
-    default: "Home - TRACK-ON",
-    template: "%s - TRACK-ON"
-  },
+  title: {
+    default:`Home - TRACK-ON`,
+    template:  "%s | TRACK-ON"
+},
   description: "Plataforma de streaming que permite ouvir online ou baixar músicas de artistas independentes, incluindo alguns brasileiros.",
 };
 

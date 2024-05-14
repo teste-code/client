@@ -1,5 +1,5 @@
 @use '@/styles/variables/variables'
-
+@use '@/styles/functions/functions'
 .header
     position: sticky
     top: 0
@@ -11,6 +11,7 @@
     display: flex
     justify-content: space-between
     align-items: center
+    gap: 2rem
     ul
         display: flex
         align-items: center
@@ -21,3 +22,6 @@
         display: flex
         align-items: center
         gap: .5rem
+        @include functions.responsive($w: 667px)
+            span
+                display: none
