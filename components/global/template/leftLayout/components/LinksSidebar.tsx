@@ -1,22 +1,16 @@
 import Link from 'next/link'
 import React from 'react'
-
+import style from "../left.module.sass"
 const LinksSidebar = () => {
     return (
-        <>
-            <ul className=''>
-                <li >Menu</li>
+        <nav>
+            <ul>
+                <li className={style.desible} >Opções</li>
                 <li> <Link href="/">Músicas</Link> </li>
-                <li> <Link href="/">PlayLists</Link> </li>
-                <li> <Link href="/">Albums</Link> </li>
+                <li> <Link href="/sounds/hits">Hits</Link> </li>
+                <li> <Link href="/sounds/news">News</Link> </li>
             </ul>
-            <ul className=''>
-                <li >Menu</li>
-                <li> <Link href="/">Casts</Link> </li>
-                <li> <Link href="/">Hits</Link> </li>
-                <li> <Link href="/">News</Link> </li>
-            </ul>
-        </>
+        </nav>
     )
 }
 

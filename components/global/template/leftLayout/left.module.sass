@@ -1,3 +1,6 @@
+@use '@/styles/variables/variables'
+@use '@/styles/functions/functions'
+
 .sidebar
     height: 100vh
     background: var(--color-secundary)
@@ -7,7 +10,27 @@
     bottom: 0
     padding: 2rem
     z-index: 999
-    display: none
+    display: flex
     flex-direction: column
     justify-content: space-between
     box-shadow: var(--box-shadow)
+    @include functions.responsive($w: 1024px)
+        display: none
+    .top
+        @include functions.flex-column-gap($gap: 2.5rem)
+        nav
+            @include functions.flex-column-gap($gap: 2.5rem)
+            ul
+                @include functions.flex-column-gap($gap: 1.3rem)
+                margin-left: 1rem
+                .desible
+                    color: #ccc !important
+                    font-weight: bold
+                    font-size: 1.3rem
+                li
+                    a
+                        @include functions.flex-center-gap($gap: .5rem)
+                        margin-left: 1.2rem
+                        span
+                            font-size: 1.2rem
+                            font-weight: bold

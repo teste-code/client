@@ -6,7 +6,7 @@ import style from "./left.module.sass"
 const LeftLayout = () => {
   return (
     <aside className={style.sidebar}>
-      <div>
+      <div className={style.top}>
         <AppLogo />
         <LinksSidebar />
       </div>

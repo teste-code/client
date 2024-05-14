@@ -6,7 +6,7 @@ import Link from 'next/link'
 const AppLogo = () => {
   return (
     <Link className={styles.Applogo} href={"/"}>
-       <MdOutlineLibraryMusic fontSize={28} /> GhettoMusic
+       <MdOutlineLibraryMusic fontSize={28} /> <span>GhettoMusic</span> 
     </Link>
   )
 }
