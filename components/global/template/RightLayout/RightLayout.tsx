@@ -6,9 +6,11 @@ import CenterRightLayout from './components/CenterRightLayout'
 const RightLayout: React.FC<ConfigAll> = ({ children }) => {
   return (
     <div>
-      <Header />
       <CenterRightLayout>
-        {children}
+        <Header />
+        <main>
+          {children}
+        </main>
       </CenterRightLayout >
     </div>
   )
