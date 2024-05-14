@@ -7,7 +7,7 @@ import { LinksHeader } from '@/utils/data/Links'
 const Header = () => {
   return (
     <header className={style.header} >
-      <AppLogo />
+      <AppLogo active={true} />
       <nav>
         <ul>
           {LinksHeader.map((link, index) => (<li key={index}>

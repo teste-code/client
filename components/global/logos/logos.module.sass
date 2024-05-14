@@ -1,7 +1,12 @@
+@use '@/styles/functions/functions'
 .Applogo
     font-size: 1.3rem
     display: flex
     gap: .5rem
     align-items: center
+    &.active
+        display: none !important
+        @include functions.responsive($w: 1024px)
+            display: flex !important
     span
         font-weight: bold !important

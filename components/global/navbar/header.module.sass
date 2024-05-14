@@ -9,7 +9,9 @@
     background: map-get(variables.$colors, color-secundary)
     box-shadow: var(--box-shadow)
     display: flex
-    justify-content: space-between
+    justify-content: flex-end
+    @include functions.responsive($w: 1024px)
+        justify-content: space-between
     align-items: center
     gap: 2rem
     ul
