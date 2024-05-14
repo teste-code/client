@@ -1,15 +1,22 @@
 import Link from 'next/link'
 import React from 'react'
-import { LinksHeader } from '@/utils/data/Links'
 
+import style from "./header.module.sass"
+import AppLogo from '../logos/AppLogo'
+import { LinksHeader } from '@/utils/data/Links'
 const Header = () => {
   return (
-    <header >
-        <nav>
-            <ul>
-                {LinksHeader.map((link, index)=>(<li key={link.id}><Link href={link.path}> {link.titlePath} </Link></li>))}
-            </ul>
-        </nav>
+    <header className={style.header} >
+      <AppLogo />
+      <nav>
+        <ul>
+          {LinksHeader.map((link, index) => (<li key={index}>
+            <Link href={link.path}>
+              {link.figure}
+              <span>{link.titlePath} </span>
+            </Link></li>))}
+        </ul>
+      </nav>
     </header>
   )
 }

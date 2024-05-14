@@ -33,7 +33,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "_next/types/**/*.ts"
-  ],
+, "utils/data/Links.js"  ],
   "exclude": [
     "node_modules"
   ]
