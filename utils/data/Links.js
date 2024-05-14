@@ -13,11 +13,5 @@ export const LinksHeader =[
         titlePath: "Músicas",
         path: "/sounds",
         figure: <GoFileDirectoryFill fontSize={18} />
-    },
-    {
-        id: 3,
-        titlePath: "Géneros",
-        path: "/songs/generes",
-        figure: <IoHome fontSize={18} />
     }
 ]

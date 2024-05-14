@@ -1,10 +1,10 @@
-import Header from '@/components/global/navbar/Header'
 import React from 'react'
+import { ConfigAll } from '@/utils/interfaces/interglobals'
 
-const CenterRightLayout = () => {
+const CenterRightLayout: React.FC<ConfigAll> = ({ children }) => {
   return (
     <div>
-      <Header />
+     { children }
     </div>
   )
 }
