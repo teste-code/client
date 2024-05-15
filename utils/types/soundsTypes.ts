@@ -4,4 +4,5 @@ export type Sound={
     slug: string,
     artist: string
     cover: string
+    audio?: string
 }
