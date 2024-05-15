@@ -1,5 +1,13 @@
+@use '@/styles/functions/functions'
 .container
     padding-top: 2rem
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr))
     gap: 2rem
+    &.desctrut
+        @include functions.responsive($w: 704px)
+            grid-template-columns: repeat(3,1fr)
+        @include functions.responsive($w: 545px)
+            grid-template-columns: repeat(2,1fr)
+        @include functions.responsive($w: 344px)
+            grid-template-columns: repeat(1,1fr)

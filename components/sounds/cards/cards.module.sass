@@ -1,3 +1,4 @@
+@use '@/styles/functions/functions'
 .MainCard
     a
         padding: 2rem
@@ -5,17 +6,26 @@
         border-radius: .3rem
         display: flex
         flex-direction: column
-        gap: 1.4rem
+        gap: .8rem
         h3
-            color: #cccccc !important
-            font-weight: 600
+            color: #cccc !important
+            font-weight: 600 !important
+            font-size: 0.8rem
+        h2
+            font-size: 1.2rem
+            font-weight: 700 !important
         .cover
-            height: 160px
+            height: 190px
             width: 100%
             margin: 0 auto
             position: relative
             box-shadow: var(--box-shadow)
-           
+            @include functions.responsive($w: 845px)
+                height: 170px
+            @include functions.responsive($w: 445px)
+                height: 160px
+            @include functions.responsive($w: 344px)
+                height: 190px
             img
                 object-fit: cover
                 border-radius: .3rem

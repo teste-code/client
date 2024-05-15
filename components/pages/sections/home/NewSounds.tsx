@@ -6,7 +6,8 @@ import React from 'react'
 const NewSounds = () => {
     return (
         <section>
-            <ContainerAutofit>
+            <h2>Novos Lançamentos</h2>
+            <ContainerAutofit active={true} >
                 {sounds.map((sound, index) => (
                     <MainCard key={index} sound={sound} />
                 ))}
